@@ -88,11 +88,8 @@ public class Utils {
         String ext = filePath.substring((filePath.lastIndexOf(".") + 1),
                 filePath.length());
 
-        if (AppConstant.FILE_EXTN
-                .contains(ext.toLowerCase(Locale.getDefault())))
-            return true;
-        else
-            return false;
+        return android.src.main.java.com.example.document_scanner.helpers.AppConstant.FILE_EXTN
+                .contains(ext.toLowerCase(Locale.getDefault()));
 
     }
 

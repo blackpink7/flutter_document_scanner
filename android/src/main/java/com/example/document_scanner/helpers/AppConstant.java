@@ -1,4 +1,4 @@
-package com.example.document_scanner.helpers;
+package android.src.main.java.com.example.document_scanner.helpers;
 
 import java.util.Arrays;
 import java.util.List;

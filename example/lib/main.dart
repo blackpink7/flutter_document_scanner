@@ -1,8 +1,7 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
-
 import 'package:document_scanner/document_scanner.dart';
+import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 void main() => runApp(MyApp());
@@ -67,7 +66,7 @@ class _MyAppState extends State<MyApp> {
                               bottom: 20,
                               left: 0,
                               right: 0,
-                              child: RaisedButton(
+                              child: ElevatedButton(
                                   child: Text("retry"),
                                   onPressed: () {
                                     setState(() {
