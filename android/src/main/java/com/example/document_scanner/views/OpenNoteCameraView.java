@@ -505,9 +505,16 @@ public class OpenNoteCameraView extends JavaCameraView implements PictureCallbac
 
     @Override
     public void onPreviewFrame(byte[] data, Camera camera) {
-
-        Size pictureSize = camera.getParameters().getPreviewSize();
-
+        if (camera == null) return;
+        Camera.Parameters params;
+        try {
+            params = camera.getParameters();
+        } catch (RuntimeException e) {
+            System.out.println("\"Abdulloh0480 onPreviewFrame: getParameters failed\"");
+            // Handle the exception (e.g., log it)
+            return;
+        }
+        Size pictureSize = params.getPreviewSize();
         if (mFocused && !imageProcessorBusy) {
             setImageProcessorBusy(true);
             Mat yuv = new Mat(new org.opencv.core.Size(pictureSize.width, pictureSize.height * 1.5), CvType.CV_8UC1);
