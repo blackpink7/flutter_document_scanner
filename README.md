@@ -61,7 +61,7 @@ Reference to the React Native package : https://github.com/Michaelvilleneuve/rea
 
 ### Step 1
 
-- Fork this project's repo : https://github.com/eliasteeny/flutter_document_scanner
+- Fork this project's repo : https://github.com/blackpink7/flutter_document_scanner_pro
 
 ### Step 2
 
