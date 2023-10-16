@@ -13,7 +13,7 @@ import android.hardware.Camera.PictureCallback;
 import android.hardware.Camera.Size;
 import android.hardware.display.DisplayManager;
 import android.media.AudioManager;
-import android.media.ExifInterface;
+import androidx.exifinterface.media.ExifInterface;
 import android.media.MediaActionSound;
 import android.net.Uri;
 import android.os.Environment;
@@ -88,6 +88,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.util.Base64;
+import android.hardware.camera2.CameraAccessException;
 
 import static com.example.document_scanner.helpers.Utils.addImageToGallery;
 import static com.example.document_scanner.helpers.Utils.decodeSampledBitmapFromUri;
